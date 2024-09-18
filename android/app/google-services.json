@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "634458892983",
+    "project_id": "scaler-50378",
+    "storage_bucket": "scaler-50378.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634458892983:android:4dfca8fedd15815855fb32",
+        "android_client_info": {
+          "package_name": "com.example.scaler"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDELMZGBg_sSDXSg_jzN9Azas1sSQbtcH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634458892983:android:004586072a9dda0055fb32",
+        "android_client_info": {
+          "package_name": "com.example.scaler_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDELMZGBg_sSDXSg_jzN9Azas1sSQbtcH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634458892983:android:2a1b45e27ab5ff9055fb32",
+        "android_client_info": {
+          "package_name": "com.scaler_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDELMZGBg_sSDXSg_jzN9Azas1sSQbtcH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
