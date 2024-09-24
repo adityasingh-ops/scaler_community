@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 AppBar customAppBar(String heading) {
   return AppBar(
     backgroundColor: Colors.white,
-    title: Text("Sign In",
+    title: Text(heading,
         style: TextStyle(
             color: Colors.black,
             fontSize: 16.sp,
@@ -21,7 +21,7 @@ AppBar customAppBar(String heading) {
 
 Widget buildThirdPartyLogin() {
   return Container(
-    margin: EdgeInsets.only(top: 40.h, bottom: 20.h),
+    margin: EdgeInsets.only(top: 40.h, bottom: 20.h, left: 30.w, right: 30.w),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
@@ -55,7 +55,8 @@ Widget reusableText(String text) {
   );
 }
 
-Widget reusableTextField(String hintText, String boxtype, String iconname) {
+Widget reusableTextField(String hintText, String boxtype, String iconname,
+    void Function(String value) onChanged) {
   return Container(
     margin: EdgeInsets.only(left: 20.w, right: 20.w),
     child: Column(
@@ -69,6 +70,9 @@ Widget reusableTextField(String hintText, String boxtype, String iconname) {
           height: 3.h,
         ),
         TextField(
+          onChanged: (value) {
+            onChanged(value);
+          },
           decoration: InputDecoration(
             prefixIcon: Container(
               margin: EdgeInsets.only(left: 10.w),
@@ -110,7 +114,7 @@ Widget reusableTextField(String hintText, String boxtype, String iconname) {
               fontFamily: "Avenir",
               fontWeight: FontWeight.normal,
               color: Colors.black),
-          obscureText: hintText == "Password" ? true : false,
+          obscureText: boxtype == "password" ? true : false,
         ),
       ],
     ),
@@ -139,10 +143,10 @@ Widget forgotPassword() {
   );
 }
 
-Widget buildRegistrationandLoginButton(String text) {
+Widget buildRegistrationandLoginButton(String text, void Function() func) {
   return GestureDetector(
       onTap: () {
-        // to be implemented
+        func();
       },
       child: Container(
         margin: EdgeInsets.only(top: 20.h, left: 20.w, right: 20.w),
